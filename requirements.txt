@@ -1,0 +1,5 @@
+"Utiliza pip para instalar las siguientes dependencias:"
+sympy
+numpy
+matplotlib
+pandas

@@ -1,0 +1,47 @@
+INFORME CAPÍTULO 3 – MÉTODOS DE INTERPOLACIÓN
+
+Puntos (x_i, y_i) usados en la interpolación:
+  (0, 1)
+  (1, 2)
+  (2, 0)
+  (3, 4)
+
+Parámetros de ejecución:
+  - num_puntos: 4
+
+RESUMEN POR MÉTODO
+-------------------
+
+Método: Vandermonde
+  Ejecutado: SÍ
+  Descripción: Polinomio de grado 3
+  Error máximo en puntos dados: 2.6645352591003757e-15
+
+Método: Newton interpolante
+  Ejecutado: SÍ
+  Descripción: Polinomio de grado 3
+  Error máximo en puntos dados: 0.0
+
+Método: Lagrange
+  Ejecutado: SÍ
+  Descripción: Polinomio de grado 3
+  Error máximo en puntos dados: 0.0
+
+Método: Spline lineal
+  Ejecutado: SÍ
+  Descripción: 3 tramos lineales
+  Error máximo en puntos dados: 0.0
+
+Método: Spline cúbico
+  Ejecutado: SÍ
+  Descripción: 3 tramos cúbicos (spline natural)
+  Error máximo en puntos dados: 0.0
+
+COMPARACIÓN GLOBAL
+------------------
+Se toma como mejor método aquel con menor error máximo en los
+puntos dados.
+
+  -> Newton interpolante
+     Descripción: Polinomio de grado 3
+     Error máximo: 0.0

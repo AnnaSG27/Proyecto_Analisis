@@ -1,0 +1,57 @@
+INFORME CAPÍTULO 2 – MÉTODOS ITERATIVOS PARA SISTEMAS LINEALES
+
+Sistema Ax = b utilizado:
+
+Matriz A:
+10 -1 2 0
+-1 11 -1 3
+2 -1 10 -1
+0 3 -1 8
+
+Vector b:
+6
+25
+-11
+15
+
+Parámetros de ejecución:
+  - tolerancia: 1e-6
+  - iter_max: 100
+  - omega_SOR: 1.2
+
+RESUMEN POR MÉTODO
+-------------------
+
+Método: Jacobi
+  Ejecutado: SÍ
+  Convergió (según tolerancia): True
+  Iteraciones: 18
+  Radio espectral de la matriz de iteración: 0.42643661084234147
+  Error iterativo final ||x^(k+1)-x^(k)||_∞: 8.730860806549501e-07
+  Residuo final ||Ax - b||_∞: 3.6924133262061787e-06
+
+Método: Gauss-Seidel
+  Ejecutado: SÍ
+  Convergió (según tolerancia): True
+  Iteraciones: 8
+  Radio espectral de la matriz de iteración: 0.08982305838804318
+  Error iterativo final ||x^(k+1)-x^(k)||_∞: 6.220629422681867e-07
+  Residuo final ||Ax - b||_∞: 4.223359875155097e-07
+
+Método: SOR
+  Ejecutado: SÍ
+  Convergió (según tolerancia): True
+  Iteraciones: 12
+  Radio espectral de la matriz de iteración: 0.22227258278620474
+  Error iterativo final ||x^(k+1)-x^(k)||_∞: 2.5580541640479737e-07
+  Residuo final ||Ax - b||_∞: 4.350567905930802e-07
+
+COMPARACIÓN GLOBAL
+------------------
+Según el criterio de comparación (convergencia, menor residuo final
+y luego menor número de iteraciones), el mejor método en esta ejecución fue:
+
+  -> Gauss-Seidel
+     Iteraciones: 8
+     Radio espectral: 0.08982305838804318
+     Residuo final: 4.223359875155097e-07
